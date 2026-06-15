@@ -19,7 +19,7 @@ def explore_data_set(matches,deliveries):
     print(f"The Deliveries Info {deliveries.info()}")
 
     print(f"The statistical Description(Matches) {matches.describe()}")
-    print(f"The statistical Description {deliveries.describe()}")
+    print(f"The statistical Description(Deliveries) {deliveries.describe()}")
 
 matches=pd.read_csv(r"data\matches.csv")
 deliveries=pd.read_csv(r"data\deliveries.csv")

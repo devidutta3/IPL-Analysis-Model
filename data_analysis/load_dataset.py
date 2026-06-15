@@ -14,12 +14,15 @@ def explore_data_set(matches,deliveries):
     print(f"It Tells The Columns Of Deliveries Data Set {deliveries.columns}" )
 
     print("\n"+"~~~"*60)
-    print(f"The Matches Info {matches.info()}")
+    print("The Matches Info\n")
+    matches.info()
     print("\n"+"~~~"*60)
-    print(f"The Deliveries Info {deliveries.info()}")
-
-    print(f"The statistical Description(Matches) {matches.describe()}")
-    print(f"The statistical Description(Deliveries) {deliveries.describe()}")
+    print("The Deliveries Info\n")
+    deliveries.info()
+    print("The statistical Description(Matches)\n")
+    print(matches.describe())
+    print("The statistical Description(Deliveries)\n")
+    print(deliveries.describe())
 
 matches=pd.read_csv(r"data\matches.csv")
 deliveries=pd.read_csv(r"data\deliveries.csv")

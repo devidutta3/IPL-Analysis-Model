@@ -23,8 +23,9 @@ def explore_data_set(matches,deliveries):
     print(matches.describe())
     print("The statistical Description(Deliveries)\n")
     print(deliveries.describe())
-
+    return matches ,deliveries
 matches=pd.read_csv(r"data\matches.csv")
 deliveries=pd.read_csv(r"data\deliveries.csv")
 
-explore_data_set(matches,deliveries)
+result=explore_data_set(matches,deliveries)
+print(result)
